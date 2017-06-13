@@ -49,7 +49,7 @@ namespace MoonAntonio.UI
 		/// <param name="eventData">Datos del evento.</param>
 		public void OnPointerEnter(PointerEventData eventData)// Cuando entra en el punto
 		{
-			
+			menu.seleccionado = this;
 		}
 
 		/// <summary>
@@ -58,7 +58,7 @@ namespace MoonAntonio.UI
 		/// <param name="eventData">Datos del evento.</param>
 		public void OnPointerExit(PointerEventData eventData)// Cuando sale el punto
 		{
-			
+			menu.seleccionado = null;
 		}
 		#endregion
 	}
