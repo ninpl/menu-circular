@@ -18,6 +18,7 @@ namespace MoonAntonio.UI
 	/// <para>Clase de la accion de la interaccion</para>
 	/// </summary>
 	[AddComponentMenu("Moon Antonio/UI/Clases/Accion")]
+	[Serializable]
 	public class Accion
 	{
 		#region Variables Privadas

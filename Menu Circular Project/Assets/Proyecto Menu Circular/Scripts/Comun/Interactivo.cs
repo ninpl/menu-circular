@@ -20,5 +20,22 @@ namespace MoonAntonio.UI
 	[AddComponentMenu("Moon Antonio/UI/Interactivo")]
 	public class Interactivo : MonoBehaviour 
 	{
+		#region Variables Publicas
+		/// <summary>
+		/// <para>Opciones del menu circular.</para>
+		/// </summary>
+		public Accion[] opciones;// Opciones del menu circular
+		#endregion
+
+		#region Metodos
+		/// <summary>
+		/// <para>Cuando el mouse hace click.</para>
+		/// </summary>
+		private void OnMouseDown()// Cuando el mouse hace click
+		{
+
+		}
+		#endregion
+
 	}
 }
