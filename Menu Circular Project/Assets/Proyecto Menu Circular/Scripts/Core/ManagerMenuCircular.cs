@@ -19,6 +19,29 @@ namespace MoonAntonio.UI
 	[AddComponentMenu("Moon Antonio/UI/ManagerMenuCircular")]
 	public class ManagerMenuCircular : MonoBehaviour 
 	{
+		#region Instancia
+		/// <summary>
+		/// <para>Instancia de <see cref="ManagerMenuCircular"/>.</para>
+		/// </summary>
+		public static ManagerMenuCircular instance;				// Instancia de ManagerMenuCircular
+		#endregion
 
+		#region Variables Publicas
+		/// <summary>
+		/// <para>Prefab del menu circular.</para>
+		/// </summary>
+		public MenuCircular menu;								// Prefab del menu circular
+		#endregion
+
+		#region Inicializadores
+		/// <summary>
+		/// <para>Inicializador de <see cref="ManagerMenuCircular"/>.</para>
+		/// </summary>
+		private void Awake()// Inicializador de ManagerMenuCircular
+		{
+			// Singleton
+			instance = this;
+		}
+		#endregion
 	}
 }
