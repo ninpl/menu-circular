@@ -33,9 +33,9 @@ namespace MoonAntonio.UI
 		/// </summary>
 		private void OnMouseDown()// Cuando el mouse hace click
 		{
-
+			// Abrir menu
+			ManagerMenuCircular.instance.AbrirMenu();
 		}
 		#endregion
-
 	}
 }

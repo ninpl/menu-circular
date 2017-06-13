@@ -217,6 +217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca9a427cb0ed9244bb7c5a0fd612a12c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  opciones: []
 --- !u!114 &1342512092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,6 +229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca9a427cb0ed9244bb7c5a0fd612a12c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  opciones: []
 --- !u!1001 &1668946167
 Prefab:
   m_ObjectHideFlags: 0
@@ -325,6 +327,12 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114296944220051682, guid: deaee60faae40084f8ed365d1cc7bd5c,
+        type: 2}
+      propertyPath: menu
+      value: 
+      objectReference: {fileID: 114250907746071140, guid: b636e9d7f5ad7414cb54adc11ac0dc1d,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: deaee60faae40084f8ed365d1cc7bd5c, type: 2}
   m_IsPrefabParent: 0
