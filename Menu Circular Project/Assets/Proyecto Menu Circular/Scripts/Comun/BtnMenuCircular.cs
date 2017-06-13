@@ -32,7 +32,11 @@ namespace MoonAntonio.UI
 		/// <summary>
 		/// <para>Titulo del boton.</para>
 		/// </summary>
-		public string titulo;								// Titulo del boton
+		public string titulo;                               // Titulo del boton
+		/// <summary>
+		/// <para>Menu del boton</para>
+		/// </summary>
+		public MenuCircular menu;							// Menu del boton
 		#endregion
 	}
 }

@@ -70,6 +70,7 @@ namespace MoonAntonio.UI
 				newBtn.circulo.color = interac.opciones[n].color;
 				newBtn.icono.sprite = interac.opciones[n].sprite;
 				newBtn.titulo = interac.opciones[n].titulo;
+				newBtn.menu = this;
 			}
 		}
 		#endregion
