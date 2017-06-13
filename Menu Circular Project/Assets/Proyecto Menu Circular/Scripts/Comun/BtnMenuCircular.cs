@@ -9,6 +9,7 @@
 
 #region Librerias
 using UnityEngine;
+using UnityEngine.UI;
 #endregion
 
 namespace MoonAntonio.UI
@@ -19,6 +20,19 @@ namespace MoonAntonio.UI
 	[AddComponentMenu("Moon Antonio/UI/BtnMenuCircular")]
 	public class BtnMenuCircular : MonoBehaviour 
 	{
-
+		#region Variables Publicas
+		/// <summary>
+		/// <para>Circulo del boton.</para>
+		/// </summary>
+		public Image circulo;								// Circulo del boton
+		/// <summary>
+		/// <para>Icono del boton.</para>
+		/// </summary>
+		public Image icono;									// Icono del boton
+		/// <summary>
+		/// <para>Titulo del boton.</para>
+		/// </summary>
+		public string titulo;								// Titulo del boton
+		#endregion
 	}
 }

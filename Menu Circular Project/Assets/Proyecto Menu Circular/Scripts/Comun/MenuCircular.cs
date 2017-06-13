@@ -58,6 +58,7 @@ namespace MoonAntonio.UI
 				newBtn.transform.SetParent(transform, false);
 
 				// Algoritmo de ordenacion circular
+				// Crea una circunferencia de un circulo y la divide por el numero opciones
 				float theta = (2 * Mathf.PI / interac.opciones.Length) * n;
 				float xPos = Mathf.Sin(theta);
 				float yPos = Mathf.Cos(theta);
