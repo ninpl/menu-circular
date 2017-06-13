@@ -11,7 +11,7 @@
 using UnityEngine;
 #endregion
 
-namespace MoonAntonio
+namespace MoonAntonio.UI
 {
 	/// <summary>
 	/// <para>Control de la interactividad del objeto</para>

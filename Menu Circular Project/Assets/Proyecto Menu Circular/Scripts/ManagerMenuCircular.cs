@@ -11,7 +11,7 @@
 using UnityEngine;
 #endregion
 
-namespace MoonAntonio
+namespace MoonAntonio.UI
 {
 	/// <summary>
 	/// <para>Manager del menu circular	</para>
