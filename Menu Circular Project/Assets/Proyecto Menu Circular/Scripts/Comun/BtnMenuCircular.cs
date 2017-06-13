@@ -10,6 +10,9 @@
 #region Librerias
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
+using System.Collections;
+using System;
 #endregion
 
 namespace MoonAntonio.UI
@@ -18,7 +21,7 @@ namespace MoonAntonio.UI
 	/// <para>Control del boton del menu circular</para>
 	/// </summary>
 	[AddComponentMenu("Moon Antonio/UI/BtnMenuCircular")]
-	public class BtnMenuCircular : MonoBehaviour 
+	public class BtnMenuCircular : MonoBehaviour , IPointerEnterHandler,IPointerExitHandler
 	{
 		#region Variables Publicas
 		/// <summary>
@@ -36,7 +39,27 @@ namespace MoonAntonio.UI
 		/// <summary>
 		/// <para>Menu del boton</para>
 		/// </summary>
-		public MenuCircular menu;							// Menu del boton
+		public MenuCircular menu;                           // Menu del boton
+		#endregion
+
+		#region Eventos
+		/// <summary>
+		/// <para>Cuando entra en el punto.</para>
+		/// </summary>
+		/// <param name="eventData">Datos del evento.</param>
+		public void OnPointerEnter(PointerEventData eventData)// Cuando entra en el punto
+		{
+			
+		}
+
+		/// <summary>
+		/// <para>Cuando sale el punto.</para>
+		/// </summary>
+		/// <param name="eventData">Datos del evento.</param>
+		public void OnPointerExit(PointerEventData eventData)// Cuando sale el punto
+		{
+			
+		}
 		#endregion
 	}
 }
