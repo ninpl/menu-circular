@@ -9,6 +9,7 @@
 
 #region Librerias
 using UnityEngine;
+using System.Collections;
 #endregion
 
 namespace MoonAntonio.UI
@@ -19,6 +20,5 @@ namespace MoonAntonio.UI
 	[AddComponentMenu("Moon Antonio/UI/Interactivo")]
 	public class Interactivo : MonoBehaviour 
 	{
-
 	}
 }
