@@ -44,5 +44,16 @@ namespace MoonAntonio.UI
 			newBtn.transform.localPosition = new Vector3(0.0f, 100.0f, 0.0f);
 		}
 		#endregion
+
+		#region Actualizadores
+		/// <summary>
+		/// <para>Actualizador de <see cref="MenuCircular"/>.</para>
+		/// </summary>
+		private void Update()// Actualizador de MenuCircular
+		{
+			// Si levantamos el dedo del mouse se destuye el menu
+			if (Input.GetMouseButtonUp(0)) Destroy(this.gameObject); 
+		}
+		#endregion
 	}
 }
