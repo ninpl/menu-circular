@@ -48,7 +48,8 @@ namespace MoonAntonio.UI
 		/// <summary>
 		/// <para>Abre el menu circular.</para>
 		/// </summary>
-		public void AbrirMenu()// Abre el menu circular.
+		/// <param name="interac">Datos de la interaccion</param>
+		public void AbrirMenu(Interactivo interac)// Abre el menu circular.
 		{
 			// Instancia el menu
 			MenuCircular newMenu = Instantiate(menu) as MenuCircular;
@@ -56,6 +57,9 @@ namespace MoonAntonio.UI
 			// Fija su posicion y su padre
 			newMenu.transform.SetParent(this.transform, false);
 			newMenu.transform.position = Input.mousePosition;
+
+
+			newMenu.AbrirBotones(interac);
 		}
 		#endregion
 	}
