@@ -65,6 +65,11 @@ namespace MoonAntonio.UI
 
 				// Asignacion de la posicion del boton
 				newBtn.transform.localPosition = new Vector3(xPos, yPos, 0.0f) * 100.0f;
+
+				// Representacion de los datos
+				newBtn.circulo.color = interac.opciones[n].color;
+				newBtn.icono.sprite = interac.opciones[n].sprite;
+				newBtn.titulo = interac.opciones[n].titulo;
 			}
 		}
 		#endregion
