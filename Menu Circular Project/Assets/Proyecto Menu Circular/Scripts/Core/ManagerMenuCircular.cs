@@ -43,5 +43,20 @@ namespace MoonAntonio.UI
 			instance = this;
 		}
 		#endregion
+
+		#region API
+		/// <summary>
+		/// <para>Abre el menu circular.</para>
+		/// </summary>
+		public void AbrirMenu()// Abre el menu circular.
+		{
+			// Instancia el menu
+			MenuCircular newMenu = Instantiate(menu) as MenuCircular;
+
+			// Fija su posicion y su padre
+			newMenu.transform.SetParent(this.transform, false);
+			newMenu.transform.position = Input.mousePosition;
+		}
+		#endregion
 	}
 }
