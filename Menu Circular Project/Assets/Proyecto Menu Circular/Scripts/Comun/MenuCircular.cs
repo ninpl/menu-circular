@@ -37,7 +37,14 @@ namespace MoonAntonio.UI
 		private void Update()// Actualizador de MenuCircular
 		{
 			// Si levantamos el dedo del mouse se destuye el menu
-			if (Input.GetMouseButtonUp(0)) Destroy(this.gameObject); 
+			if (Input.GetMouseButtonUp(0))
+			{
+				if (seleccionado)
+				{
+					// TODO Seleccionado
+				}
+				Destroy(this.gameObject);
+			}
 		}
 		#endregion
 

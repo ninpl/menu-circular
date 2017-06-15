@@ -42,6 +42,13 @@ namespace MoonAntonio.UI
 		public MenuCircular menu;                           // Menu del boton
 		#endregion
 
+		#region Variables Privadas
+		/// <summary>
+		/// <para>Color base del boton</para>
+		/// </summary>
+		private Color colorBase;							// Color base del boton
+		#endregion
+
 		#region Eventos
 		/// <summary>
 		/// <para>Cuando entra en el punto.</para>
@@ -50,6 +57,8 @@ namespace MoonAntonio.UI
 		public void OnPointerEnter(PointerEventData eventData)// Cuando entra en el punto
 		{
 			menu.seleccionado = this;
+			colorBase = circulo.color;
+			circulo.color = Color.white;
 		}
 
 		/// <summary>
@@ -59,6 +68,7 @@ namespace MoonAntonio.UI
 		public void OnPointerExit(PointerEventData eventData)// Cuando sale el punto
 		{
 			menu.seleccionado = null;
+			circulo.color = colorBase;
 		}
 		#endregion
 	}

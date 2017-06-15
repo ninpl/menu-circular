@@ -57,6 +57,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdff755c2d6c55148919aa15bd319df2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  circulo: {fileID: 114293911834558628}
+  icono: {fileID: 114483996133422628}
+  titulo: 
+  menu: {fileID: 0}
 --- !u!114 &114293911834558628
 MonoBehaviour:
   m_ObjectHideFlags: 1
