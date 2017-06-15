@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 222420789676247526}
   - component: {fileID: 114293911834558628}
   - component: {fileID: 114253899377646620}
+  - component: {fileID: 114829386745555702}
   m_Layer: 5
   m_Name: BtnInit
   m_TagString: Untagged
@@ -115,6 +116,20 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114829386745555702
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1763116461283548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 0, y: -2}
+  m_UseGraphicAlpha: 1
 --- !u!222 &222420789676247526
 CanvasRenderer:
   m_ObjectHideFlags: 1
