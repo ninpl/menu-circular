@@ -4,7 +4,7 @@
 // Autor: Antonio Mateo (Moon Antonio) 	antoniomt.moon@gmail.com				\\
 // Descripcion:		Control del Menu Circular									\\
 // Fecha Mod:		16/06/2017													\\
-// Ultima Mod:		Creacion variable label										\\
+// Ultima Mod:		Implementada funcionalidad animacion de botones.			\\
 //******************************************************************************\\
 
 #region Librerias
@@ -83,6 +83,7 @@ namespace MoonAntonio.UI
 				newBtn.icono.sprite = interac.opciones[n].sprite;
 				newBtn.titulo = interac.opciones[n].titulo;
 				newBtn.menu = this;
+				newBtn.AnimacionON();
 
 				yield return new WaitForSeconds(0.06f);
 			}

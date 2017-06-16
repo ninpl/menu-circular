@@ -62,6 +62,7 @@ MonoBehaviour:
   icono: {fileID: 114483996133422628}
   titulo: 
   menu: {fileID: 0}
+  velAnimacion: 8
 --- !u!114 &114293911834558628
 MonoBehaviour:
   m_ObjectHideFlags: 1
