@@ -10,6 +10,7 @@
 #region Librerias
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 #endregion
 
 namespace MoonAntonio.UI
@@ -51,14 +52,13 @@ namespace MoonAntonio.UI
 				Destroy(this.gameObject);
 			}
 		}
-		#endregion
 
-		#region Metodos
 		/// <summary>
-		/// <para>Inicializador de <see cref="MenuCircular"/></para>
+		/// <para>Inicia la animacion de los botones</para>
 		/// </summary>
-		/// <param name="interac">Datos de la interaccion</param>
-		public void AbrirBotones(Interactivo interac)// Inicializador de MenuCircular
+		/// <param name="interac">Interaccion</param>
+		/// <returns></returns>
+		private IEnumerator AnimacionBtns(Interactivo interac)// Inicia la animacion de los botones
 		{
 			// Representamos los botones
 			for (int n = 0; n < interac.opciones.Length; n++)
@@ -83,7 +83,21 @@ namespace MoonAntonio.UI
 				newBtn.icono.sprite = interac.opciones[n].sprite;
 				newBtn.titulo = interac.opciones[n].titulo;
 				newBtn.menu = this;
+
+				yield return new WaitForSeconds(0.06f);
 			}
+		}
+		#endregion
+
+		#region Metodos
+		/// <summary>
+		/// <para>Inicializador de <see cref="MenuCircular"/></para>
+		/// </summary>
+		/// <param name="interac">Datos de la interaccion</param>
+		public void AbrirBotones(Interactivo interac)// Inicializador de MenuCircular
+		{
+			// Iniciar animacion
+			StartCoroutine(AnimacionBtns(interac));
 		}
 		#endregion
 	}
