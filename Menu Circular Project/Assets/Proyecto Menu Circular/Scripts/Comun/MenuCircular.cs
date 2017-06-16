@@ -3,12 +3,13 @@
 // MenuCircular.cs (13/06/2017)													\\
 // Autor: Antonio Mateo (Moon Antonio) 	antoniomt.moon@gmail.com				\\
 // Descripcion:		Control del Menu Circular									\\
-// Fecha Mod:		13/06/2017													\\
-// Ultima Mod:		Version Inicial												\\
+// Fecha Mod:		16/06/2017													\\
+// Ultima Mod:		Creacion variable label										\\
 //******************************************************************************\\
 
 #region Librerias
 using UnityEngine;
+using UnityEngine.UI;
 #endregion
 
 namespace MoonAntonio.UI
@@ -28,6 +29,10 @@ namespace MoonAntonio.UI
 		/// <para>Boton seleccionado actualmente.</para>
 		/// </summary>
 		public BtnMenuCircular seleccionado;                    // Boton seleccionado actualmente
+		/// <summary>
+		/// <para>Texto de titulo.</para>
+		/// </summary>
+		public Text label;										// Texto de titulo
 		#endregion
 
 		#region Actualizadores

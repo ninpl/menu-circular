@@ -37,6 +37,7 @@ GameObject:
   - component: {fileID: 33860867264649222}
   - component: {fileID: 65959509833056850}
   - component: {fileID: 23964722285831794}
+  - component: {fileID: 114555022013914072}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -55,6 +56,7 @@ GameObject:
   - component: {fileID: 33696969816108180}
   - component: {fileID: 136677291613817022}
   - component: {fileID: 23787407897311366}
+  - component: {fileID: 114472394798974222}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -193,6 +195,56 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114472394798974222
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1995772069036780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca9a427cb0ed9244bb7c5a0fd612a12c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opciones:
+  - color: {r: 0.5058824, g: 0.75686276, b: 1, a: 1}
+    sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+    titulo: 001
+  - color: {r: 0.31764707, g: 0.44313726, b: 0.64705884, a: 1}
+    sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+    titulo: 002
+  - color: {r: 0.24705882, g: 0.1882353, b: 0.2784314, a: 1}
+    sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+    titulo: 003
+  titulo: Titulo2
+--- !u!114 &114555022013914072
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1547779817618970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca9a427cb0ed9244bb7c5a0fd612a12c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opciones:
+  - color: {r: 0.5058824, g: 0.75686276, b: 1, a: 1}
+    sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+    titulo: 001
+  - color: {r: 0.31764707, g: 0.44313726, b: 0.64705884, a: 1}
+    sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+    titulo: 002
+  - color: {r: 0.24705882, g: 0.1882353, b: 0.2784314, a: 1}
+    sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+    titulo: 003
+  - color: {r: 1, g: 0.47931033, b: 0.47931033, a: 1}
+    sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+    titulo: 004
+  - color: {r: 0.33823532, g: 0.33823532, b: 0.33823532, a: 1}
+    sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+    titulo: 005
+  titulo: Titulo1
 --- !u!136 &136677291613817022
 CapsuleCollider:
   m_ObjectHideFlags: 1

@@ -3,8 +3,8 @@
 // ManagerMenuCircular.cs (13/06/2017)											\\
 // Autor: Antonio Mateo (Moon Antonio) 	antoniomt.moon@gmail.com				\\
 // Descripcion:		Manager del menu circular									\\
-// Fecha Mod:		13/06/2017													\\
-// Ultima Mod:		Version Inicial												\\
+// Fecha Mod:		16/06/2017													\\
+// Ultima Mod:		Immplementacion de titulo									\\
 //******************************************************************************\\
 
 #region Librerias
@@ -57,8 +57,9 @@ namespace MoonAntonio.UI
 			// Fija su posicion y su padre
 			newMenu.transform.SetParent(this.transform, false);
 			newMenu.transform.position = Input.mousePosition;
+			newMenu.label.text = interac.titulo.ToUpper(); // Convertimos en mayusculas
 
-
+			// Mostrar botones del menu
 			newMenu.AbrirBotones(interac);
 		}
 		#endregion
